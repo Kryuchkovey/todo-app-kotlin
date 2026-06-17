@@ -1,6 +1,5 @@
 package com.example.todoapp.ui
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -66,7 +65,6 @@ fun TodoScreen(viewModel: TodoViewModel) {
                 .padding(paddingValues)
                 .padding(16.dp)
         ) {
-            // Search Bar
             SearchBar(
                 query = searchQuery,
                 onQueryChange = { searchQuery = it },
@@ -75,7 +73,6 @@ fun TodoScreen(viewModel: TodoViewModel) {
                     .padding(bottom = 16.dp)
             )
 
-            // Filter Buttons
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -92,7 +89,6 @@ fun TodoScreen(viewModel: TodoViewModel) {
                 }
             }
 
-            // Todo List
             if (filteredTodos.isEmpty()) {
                 Box(
                     modifier = Modifier
@@ -119,7 +115,6 @@ fun TodoScreen(viewModel: TodoViewModel) {
         }
     }
 
-    // Add Todo Dialog
     if (showAddDialog) {
         AlertDialog(
             onDismissRequest = { showAddDialog = false },

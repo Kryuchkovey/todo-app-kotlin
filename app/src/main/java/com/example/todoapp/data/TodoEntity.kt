@@ -11,5 +11,5 @@ data class TodoEntity(
     val description: String,
     val isCompleted: Boolean = false,
     val createdAt: Long = System.currentTimeMillis(),
-    val priority: String = "Normal" // High, Normal, Low
+    val priority: String = "Normal"
 )

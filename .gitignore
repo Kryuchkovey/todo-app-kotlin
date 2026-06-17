@@ -1,8 +1,57 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
 local.properties
-.gradle
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+GeneratedPluginRegistrant.java
+.idea/
+.classpath
+.c9/
+*.class
+*.iml
+*.iws
+*.ipr
+*.swp
+*~.nib
 .DS_Store
+.settings/
+*.sublime-workspace
+
+# IntelliJ
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/codeStyles/
+.idea/caches/
+.idea/modules.xml
+*.iml
+.idea/misc.xml
+
+# Android Studio
+androidStudioFirstRun.xml
+.Android/
+
+# gradle
+.gradle/
+gradle-app.setting
+
+# Signing files
+.signing/
+
+# User-specific configurations
+.idea/libraries/
+.idea/workspace.xml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
